@@ -1,6 +1,4 @@
-# Alvaro Cruz Perez — Engineering Portfolio
-
-This version is intentionally **not tailored to one company or one job posting**.
+# Alvaro Alejandro Cruz Perez — Engineering Portfolio
 
 The portfolio is organized around a professional story:
 
