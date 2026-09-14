@@ -136,7 +136,22 @@ h3 { font-size: 1.34rem; }
 }
 .card-link { margin-top: auto; text-decoration: none; color: var(--accent); font-weight: 900; }
 .card-link:hover, .card-link:focus-visible { text-decoration: underline; }
+.project-group-heading {
+  margin-top: 4rem;
+  margin-bottom: 1.75rem;
+  max-width: 700px;
+}
 
+.project-group-heading h3 {
+  margin: 0.4rem 0 0.6rem;
+  font-size: 1.8rem;
+}
+
+.project-group-heading p:last-child {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
 .research-overview { display: grid; grid-template-columns: .9fr 1.1fr; gap: 22px; align-items: start; }
 .research-steps { display: grid; gap: 12px; }
 .step {
