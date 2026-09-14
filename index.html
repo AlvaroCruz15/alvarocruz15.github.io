@@ -80,83 +80,294 @@
 
 <section class="section" id="projects">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head projects-section-head">
       <span class="eyebrow">Selected Work</span>
-      <h2>From complex needs to usable engineering systems</h2>
-      <p>
-        These projects show different parts of the same engineering process: define the real need, build around constraints,
-        test the system, learn from failure, and improve the next iteration.
+      <h2 class="projects-main-title">From complex needs to usable engineering systems.</h2>
+      <p>These projects show different parts of the same engineering process:
+        define the real need, build around constraints, test the system,
+        learn from failure, and improve the next iteration.
       </p>
     </div>
     
     <div class="project-group-heading">
-      <p class="eyebrow">RESEARCH PROJECTS</p>
+      <span class="eyebrow">Research Projects</span>
+
       <h3>Research-driven engineering</h3>
-      <p>Engineering projects developed through laboratory research, experimental workflows, and ongoing investigation.</p>
+
+      <p>
+        Engineering projects developed through laboratory research,
+        experimental workflows, and ongoing investigation.
+      </p>
     </div>
     
     <div class="project-grid">
-      <article class="card project-card">
-        <div class="project-number">01 • Medical device • Mechanical design</div>
-        <h3>MRI-Compatible Ferret Cradle</h3>
-        <p>A 3D-printed positioning system for live-animal 7T brain MRI, developed from veterinary and imaging-user needs through CAD, prototyping, and in-scanner validation.</p>
-        <p class="lesson">Engineering focus: constrained design, research instrumentation, usability, and validation.</p>
-        <div class="tags"><span class="tag">SolidWorks</span><span class="tag">3D Printing</span><span class="tag">7T MRI</span><span class="tag">Validation</span></div>
-        <a class="card-link" href="projects/cradle.html">Read case study →</a>
+      <article class="card project-card project-card-visual">
+        <div class="project-visual">
+          <img
+            src="assets/images/cradle-poster-2025.webp"
+            alt="MRI-compatible ferret cradle research poster"
+            loading="lazy">
+        </div>
+        <div class="project-card-body">
+          <div class="project-number">
+            01 • Medical device • Mechanical design
+          </div>
+          <h3>MRI-Compatible Ferret Cradle</h3>
+          <p>
+            A 3D-printed positioning system for live-animal 7T brain MRI,
+            developed from veterinary and imaging-user needs through CAD,
+            prototyping, and in-scanner validation.
+          </p>
+          <p class="lesson">
+            Engineering focus: constrained design, research instrumentation,
+            usability, and validation.
+          </p>
+          <div class="tags">
+            <span class="tag">SolidWorks</span>
+            <span class="tag">3D Printing</span>
+            <span class="tag">7T MRI</span>
+            <span class="tag">Validation</span>
+          </div>
+          <a class="card-link" href="projects/cradle.html">
+            Read case study →
+          </a>
+        </div>
       </article>
       
-      <article class="card project-card">
-        <div class="project-number">02 • Biomechanics • Computer vision</div>
-        <h3>Markerless Ferret Gait Analysis</h3>
-        <p>A DeepLabCut and Python workflow for converting multi-camera video into repeatable locomotion and kinematic measurements across subjects and timepoints.</p>
-        <p class="lesson">Engineering focus: pose estimation, filtering, step and stride detection, joint kinematics, and validation.</p>
-        <div class="tags"><span class="tag">Python</span><span class="tag">DeepLabCut</span><span class="tag">Kinematics</span><span class="tag">Computer Vision</span></div>
-        <a class="card-link" href="projects/gait.html">Read case study →</a>
-      </article>
-      </div>
-    
-      <div class="project-group-heading">
-        <p class="eyebrow">ACADEMIC PROJECTS</p>
-        <h3>Design, integration, and testing</h3>
-        <p>Course and capstone projects focused on developing, integrating, and evaluating engineering solutions.</p>
-      </div>
-      
-      <article class="card project-card">
-        <div class="project-number">03 • Capstone • Electromechanical systems</div>
-        <h3>MACRO Hand Assessment Device</h3>
-        <p>Mechanical lead for an adjustable hand-assessment system combining repeatable digit positioning, tactile stimulation, force sensing, and embedded control.</p>
-        <p class="lesson">Engineering focus: mechanisms, ergonomics, system integration, assembly, and design leadership.</p>
-        <div class="tags"><span class="tag">SolidWorks</span><span class="tag">FSRs + LRAs</span><span class="tag">ESP32</span><span class="tag">3D Printing</span></div>
-        <a class="card-link" href="projects/macro.html">Read NDA-safe case study →</a>
-      </article>
-
-      <article class="card project-card">
-        <div class="project-number">04 • Bioprinting • Biohybrid robotics</div>
-        <h3>BioBoat Bioactuator</h3>
-        <p>A PEGDA raft and rudder concept designed to translate skeletal-muscle actuation into controlled swimming motion under constrained laboratory conditions.</p>
-        <p class="lesson">Engineering focus: CAD, simulation, additive manufacturing, biomaterials, and muscle-actuator integration.</p>
-        <div class="tags"><span class="tag">CAD</span><span class="tag">Simulation</span><span class="tag">Asiga</span><span class="tag">C2C12</span></div>
-        <a class="card-link" href="projects/bioboat.html">Read case study →</a>
-      </article>
-
-      <article class="card project-card">
-        <div class="project-number">05 • Wearables • PCB + sensing</div>
-        <h3>Track Your Trek Wearable</h3>
-        <p>A heat-illness monitoring concept for hikers combining heart-rate sensing, motion data, temperature sensing, LoRa communication, custom PCBs, alerts, and a simple monitoring interface.</p>
-        <p class="lesson">Engineering focus: sensor integration, debugging, testability, and subsystem bring-up.</p>
-        <div class="tags"><span class="tag">Eagle PCB</span><span class="tag">LoRa</span><span class="tag">Sensors</span><span class="tag">Troubleshooting</span></div>
-        <a class="card-link" href="projects/wearable.html">Read case study →</a>
-      </article>
-
-      <article class="card project-card">
-        <div class="project-number">06 • Robotics • Programming + prototyping</div>
-        <h3>Hand Over Design Competition</h3>
-        <p>A three-arm robotic transfer system built for a design competition, integrating Python control, iterative 3D-printed interfaces, custom gripping concepts, and coordinated motion between Me-Arms.</p>
-        <p class="lesson">Engineering focus: programming, rapid prototyping, mechanism iteration, and mechanical-software integration.</p>
-        <div class="tags"><span class="tag">Python</span><span class="tag">Onshape</span><span class="tag">3D Printing</span><span class="tag">Robotics</span></div>
-        <a class="card-link" href="projects/handover.html">Read case study →</a>
+      <article class="card project-card project-card-visual">
+        <div class="project-visual gait-visual">
+          <div class="gait-graphic">
+            <div class="gait-line"></div>
+            <span class="gait-point gait-point-1"></span>
+            <span class="gait-point gait-point-2"></span>
+            <span class="gait-point gait-point-3"></span>
+            <span class="gait-point gait-point-4"></span>
+            <div class="gait-label">
+              <strong>Markerless gait analysis</strong>
+              <small>Pose estimation • Kinematics • Python</small>
+            </div>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-number">
+            02 • Biomechanics • Computer vision
+          </div>
+          <h3>Markerless Ferret Gait Analysis</h3>
+          <p>
+            A DeepLabCut and Python workflow for converting multi-camera
+            video into repeatable locomotion and kinematic measurements
+            across subjects and timepoints.
+          </p>
+          <p class="lesson">
+            Engineering focus: pose estimation, filtering, step and stride
+            detection, joint kinematics, and validation.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">DeepLabCut</span>
+            <span class="tag">Kinematics</span>
+            <span class="tag">Computer Vision</span>
+          </div>
+          <a class="card-link" href="projects/gait.html">
+            Read case study →
+          </a>
+        </div>
       </article>
     </div>
+    
+      <div class="project-group-heading academic-heading">
+      <span class="eyebrow">Academic Projects</span>
+
+      <h3>Design, integration, and testing</h3>
+
+      <p>
+        Course and capstone projects focused on developing, integrating,
+        and evaluating engineering solutions.
+      </p>
+    </div>
+
+
+    <div class="project-grid">
+
+      <!-- MACRO -->
+      <article class="card project-card project-card-visual">
+
+        <div class="project-visual macro-visual">
+          <div class="macro-mark">
+            <span>MACRO</span>
+            <small>NDA-safe project</small>
+          </div>
+        </div>
+
+        <div class="project-card-body">
+
+          <div class="project-number">
+            03 • Capstone • Electromechanical systems
+          </div>
+
+          <h3>MACRO Hand Assessment Device</h3>
+
+          <p>
+            Mechanical lead for an adjustable hand-assessment system
+            combining repeatable digit positioning, tactile stimulation,
+            force sensing, and embedded control.
+          </p>
+
+          <p class="lesson">
+            Engineering focus: mechanisms, ergonomics, system integration,
+            assembly, and design leadership.
+          </p>
+
+          <div class="tags">
+            <span class="tag">SolidWorks</span>
+            <span class="tag">FSRs + LRAs</span>
+            <span class="tag">ESP32</span>
+            <span class="tag">3D Printing</span>
+          </div>
+
+          <a class="card-link" href="projects/macro.html">
+            Read NDA-safe case study →
+          </a>
+
+        </div>
+      </article>
+
+
+      <!-- BIOBOAT -->
+      <article class="card project-card project-card-visual">
+
+        <div class="project-visual">
+          <img
+            src="assets/images/bioboat-prototype.webp"
+            alt="BioBoat bioactuator prototype"
+            loading="lazy">
+        </div>
+
+        <div class="project-card-body">
+
+          <div class="project-number">
+            04 • Bioprinting • Biohybrid robotics
+          </div>
+
+          <h3>BioBoat Bioactuator</h3>
+
+          <p>
+            A PEGDA raft and rudder concept designed to translate
+            skeletal-muscle actuation into controlled swimming motion
+            under constrained laboratory conditions.
+          </p>
+
+          <p class="lesson">
+            Engineering focus: CAD, simulation, additive manufacturing,
+            biomaterials, and muscle-actuator integration.
+          </p>
+
+          <div class="tags">
+            <span class="tag">CAD</span>
+            <span class="tag">Simulation</span>
+            <span class="tag">Asiga</span>
+            <span class="tag">C2C12</span>
+          </div>
+
+          <a class="card-link" href="projects/bioboat.html">
+            Read case study →
+          </a>
+
+        </div>
+      </article>
+
+
+      <!-- TRACK YOUR TREK -->
+      <article class="card project-card project-card-visual">
+
+        <div class="project-visual">
+          <img
+            src="assets/images/wearable-system.webp"
+            alt="Track Your Trek wearable monitoring system"
+            loading="lazy">
+        </div>
+
+        <div class="project-card-body">
+
+          <div class="project-number">
+            05 • Wearables • PCB + sensing
+          </div>
+
+          <h3>Track Your Trek Wearable</h3>
+
+          <p>
+            A heat-illness monitoring concept for hikers combining
+            heart-rate sensing, motion data, temperature sensing,
+            LoRa communication, custom PCBs, alerts, and a simple
+            monitoring interface.
+          </p>
+
+          <p class="lesson">
+            Engineering focus: sensor integration, debugging,
+            testability, and subsystem bring-up.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Eagle PCB</span>
+            <span class="tag">LoRa</span>
+            <span class="tag">Sensors</span>
+            <span class="tag">Troubleshooting</span>
+          </div>
+
+          <a class="card-link" href="projects/wearable.html">
+            Read case study →
+          </a>
+
+        </div>
+      </article>
+
+
+      <!-- HAND OVER -->
+      <article class="card project-card project-card-visual">
+
+        <div class="project-visual">
+          <img
+            src="assets/images/handover-system.webp"
+            alt="Hand Over three-arm robotic transfer system"
+            loading="lazy">
+        </div>
+
+        <div class="project-card-body">
+
+          <div class="project-number">
+            06 • Robotics • Programming + prototyping
+          </div>
+
+          <h3>Hand Over Design Competition</h3>
+
+          <p>
+            A three-arm robotic transfer system built for a design
+            competition, integrating Python control, iterative 3D-printed
+            interfaces, custom gripping concepts, and coordinated motion
+            between Me-Arms.
+          </p>
+
+          <p class="lesson">
+            Engineering focus: programming, rapid prototyping,
+            mechanism iteration, and mechanical-software integration.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Onshape</span>
+            <span class="tag">3D Printing</span>
+            <span class="tag">Robotics</span>
+          </div>
+
+          <a class="card-link" href="projects/handover.html">
+            Read case study →
+          </a>
+
+        </div>
+      </article>
+
+    </div>
+
   </div>
 </section>
 
