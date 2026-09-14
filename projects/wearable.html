@@ -3,75 +3,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Heat Illness Detection Wearable | Alvaro Cruz Perez</title>
+  <meta name="description" content="Track Your Trek heat-illness monitoring wearable engineering project by Alvaro Cruz Perez.">
+  <title>Track Your Trek Wearable | Alvaro Cruz Perez</title>
   <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
-<header class="site-header">
-  <nav class="container nav">
-    <a class="brand" href="../index.html">Alvaro Cruz Perez</a>
-    <div class="nav-links">
-      <a href="../index.html#journey">Journey</a>
-      <a href="../index.html#projects">Projects</a>
-      <a href="../resume/Alvaro_Cruz_Perez_Resume.pdf">Resume</a>
-      <a href="https://github.com/AlvaroCruz15">GitHub</a>
-      <a href="https://www.linkedin.com/in/alvaro-cruz-perez-540413274/">LinkedIn</a>
-    </div>
-  </nav>
-</header>
+<header class="site-header"><nav class="container nav" aria-label="Primary navigation"><a class="brand" href="../index.html">Alvaro Cruz Perez</a><div class="nav-links"><a href="../index.html#projects">Projects</a><a href="../index.html#outputs">Research Outputs</a><a href="../index.html#about">About</a><a href="../resume/Alvaro_Cruz_Perez_Resume.pdf">Resume</a><a href="https://github.com/AlvaroCruz15" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/alvaro-cruz-perez-540413274/" target="_blank" rel="noopener">LinkedIn</a></div></nav></header>
 <main>
-<section class="project-hero">
-  <div class="container">
-    <span class="eyebrow">Systems Foundations • Medical Device Design</span>
-    <h1>Heat Illness Detection Wearable</h1>
-    <p class="hero-copy">One of my earlier device projects, where I learned that integrating sensors and electronics is often less about connecting blocks on a diagram and more about systematically finding what is failing between them.</p>
-  </div>
-</section>
+<section class="project-hero"><div class="container"><span class="eyebrow">Medical Device Design • Wearables • PCB + Sensing</span><h1>Track Your Trek</h1><p class="hero-copy">A wearable heat-illness monitoring concept for hikers that combined physiological sensing, motion, temperature, wireless communication, alerts, and custom electronics. The project became an important lesson in designing for integration, calibration, testability, and failure recovery.</p></div></section>
+<section class="section"><div class="container case-grid">
+  <aside class="case-sidebar">
+    <div class="card"><h3>Project snapshot</h3><ul class="list-clean"><li>Course: Medical Device Design, Spring 2025</li><li>Target use: heat-illness awareness for hikers</li><li>Sensing: heart rate, acceleration, temperature</li><li>Communication: LoRa transmitter / receiver</li><li>Hardware: custom PCB development, ESP-based control, alerts</li><li>My focus: PCB design, sensor debugging, assembly, integration, and receiver setup</li></ul><div class="inline-links"><a href="../project-docs/Track_Your_Trek_Presentation.pdf">Project presentation</a><a href="../project-docs/Track_Your_Trek_Engineering_Journal.pdf">Engineering journal</a></div></div>
+  </aside>
+  <div>
+    <section class="case-section"><p class="quote">The most valuable outcome was learning to treat a biomedical device as a chain of dependent subsystems: sensing, power, communication, packaging, software, calibration, and validation.</p></section>
 
-<section class="section">
-  <div class="container case-grid">
-    <aside class="case-sidebar">
-      <div class="card">
-        <h3>Project snapshot</h3>
-        <ul class="list-clean"><li>Focus: wearable biomedical sensing</li><li>Hardware: pulse oximeter, accelerometer, thermistors</li><li>Skills: soldering, PCB work, troubleshooting</li><li>Role in my development: system integration</li></ul>
-      </div>
-      <div class="note" style="margin-top:18px">
-        Only publish images, drawings, code, data, or technical details that are cleared for public release.
-      </div>
-    </aside>
+    <section class="case-section"><h2>Clinical need and system concept</h2><p>The team designed Track Your Trek around hikers exposed to prolonged heat. The concept was to combine physiological and motion indicators with temperature measurements, transmit data to a ranger-station receiver using LoRa, and provide visual or audible alerts when measurements crossed defined thresholds.</p><figure class="figure-card"><img src="../assets/images/wearable-system.webp" alt="Track Your Trek technical system concept showing the wearable hat, ranger station, alerts, sensors and LoRa communication"><figcaption>System concept from the final presentation: wearable sensing on the hat, wireless LoRa communication, and a ranger-station alert unit.</figcaption></figure></section>
 
-    <div>
-      <section class="case-section">
-        <p class="quote">This project changed the way I troubleshoot. Instead of treating a device as one object, I learned to isolate subsystems, verify interfaces, and build confidence one layer at a time.</p>
-      </section>
-      
-        <section class="case-section">
-          <h2>The problem</h2>
-          <p>The goal was to develop a wearable system combining physiological, motion, and temperature sensing for heat-illness-related monitoring. The project required multiple sensors and embedded hardware to function together reliably.</p>
-        </section>
-        <section class="case-section">
-          <h2>What I worked on</h2>
-          <p>I contributed to integrating the pulse-oximetry, accelerometer, and temperature-sensing hardware and worked through communication and circuit problems when the prototype did not behave as expected.</p>
-        </section>
-        <section class="case-section">
-          <h2>What I learned</h2>
-          <p>I used voltage checks, component isolation, trace review, circuit rework, and subsystem testing to identify problems. The device was not a perfect final product, but the troubleshooting process became one of the most valuable parts of the project.</p>
-        </section>
-        <section class="case-section">
-          <h2>How it shaped my direction</h2>
-          <p>This was an early step toward my interest in hands-on engineering. It made me want to work closer to hardware, where design decisions, interfaces, fabrication, and debugging have visible consequences.</p>
-        </section>
-      <section class="case-section">
-        <h2>Visual story</h2>
-        <div class="gallery-note">
-          Add 2 to 5 approved visuals that show progression: early concept, CAD or schematic,
-          prototype, test setup, and a final result or lesson. The goal is to show how your thinking changed,
-          not just what the final object looked like.
-        </div>
-      </section>
-    </div>
+    <section class="case-section"><h2>My engineering work</h2><p>I worked directly on the electronics and integration path. Early in the project I debugged the MAX30102 pulse-oximetry sensor and investigated signal noise. I then reviewed sensor interfaces, developed the first mainboard layout in Eagle, worked on the LoRa receiver, submitted the mainboard for fabrication, soldered and assembled hardware, probed voltage outputs, and helped integrate the boards into the final system.</p><p>The work also included debugging the accelerometer with a separate ESP, soldering pin connections for more reliable interfaces, and troubleshooting the temperature-sensing circuitry during final assembly.</p></section>
+
+    <section class="case-section"><h2>PCB and subsystem integration</h2><p>The project progressed from commercial-module testing toward custom boards. The final documentation includes an accelerometer/ESP board plus separate pulse-oximetry and thermistor boards. This was where layout choices, solder quality, component viability, wiring, and access for rework became practical engineering constraints rather than abstract design considerations.</p><figure class="figure-card"><img src="../assets/images/wearable-pcb.webp" alt="Track Your Trek custom PCB layouts and assembled sensor boards"><figcaption>Custom PCB layouts and assembled hardware shown in the final project presentation.</figcaption></figure></section>
+
+    <section class="case-section"><h2>Communication and software</h2><p>The prototype used LoRa communication between the wearable and the monitoring station. The software initialized the sensors, calculated and averaged heart rate when contact was detected, read acceleration and temperature data, assembled those values into a message, and transmitted the message at regular intervals. The team also built a simple display and alert logic for received measurements.</p><figure class="figure-card"><img src="../assets/images/wearable-debugging.webp" alt="Track Your Trek debugging process showing problems, solutions and next steps"><figcaption>The documented debugging process connected observed failures to corrective action and design changes for future iterations.</figcaption></figure></section>
+
+    <section class="case-section"><h2>Validation exposed the limitations</h2><p>The final comparison against reference measurements showed that the breadboard prototype was much closer to the reference for heart rate and body temperature than the custom-board temperature measurement. The reported comparisons were 9.38% error for heart rate, 7.56% for body temperature, and 45.4% for the custom-board outside-temperature measurement. I treat these results as evidence of what still needed to be fixed, not as proof of a finished clinical device.</p><figure class="figure-card"><img src="../assets/images/wearable-validation.webp" alt="Track Your Trek clinical comparison table showing reference measurements and prototype error"><figcaption>Final-project comparison against reference measurements. The large custom-board temperature error identified a major remaining validation problem.</figcaption></figure></section>
+
+    <section class="case-section"><h2>Failure analysis and lessons</h2><p>Two recurring problems were thermistor outputs that did not match predicted values and shorts introduced during board assembly. The team responded by recalibrating the code around measured voltages, inspecting tracks and solder joints, checking component viability, and repeatedly isolating subsystems before reintegration.</p><ul class="list-clean"><li>Design PCBs for probing, rework, and component replacement.</li><li>Validate each sensor and communication path independently before full-system assembly.</li><li>Compare measured voltages with expected values early, rather than waiting until final integration.</li><li>Mechanical packaging has to preserve access to electrical interfaces.</li><li>A prototype can be valuable even when it fails, if the failure is measured and converted into a better engineering process.</li></ul></section>
   </div>
-</section>
+</div></section>
 </main>
 <footer class="footer"><div class="container"><a href="../index.html#projects">← Back to selected projects</a></div></footer>
 </body>
