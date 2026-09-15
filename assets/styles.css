@@ -218,13 +218,13 @@ h3 { font-size: 1.34rem; }
 }
 
 .bioboat-visual {
-  height: 1000px;
+  height: 260px;
   background: #eef2f2;
 }
 .bioboat-visual img {
   object-fit: cover;
   object-position: center;
-  padding: 8px;
+  padding: 0px;
 }
 
 .wearable-visual {
