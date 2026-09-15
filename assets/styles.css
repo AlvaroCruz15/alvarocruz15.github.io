@@ -222,7 +222,7 @@ h3 { font-size: 1.34rem; }
   background: #eef2f2;
 }
 .bioboat-visual img {
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
   padding: 8px;
 }
