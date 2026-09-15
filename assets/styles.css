@@ -111,7 +111,20 @@ h3 { font-size: 1.34rem; }
 .capability { border-top: 4px solid var(--accent); }
 .capability h3 { margin-bottom: 7px; }
 .capability p { margin-bottom: 0; }
+.coursework-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
 
+.course-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.course-card p {
+  margin: 0;
+}
 .projects-section-head {
   max-width: 900px;
   margin-bottom: 48px;
@@ -456,4 +469,5 @@ h3 { font-size: 1.34rem; }
   .hero { padding-top: 66px; }
   .capability-grid, .output-grid, .gallery-grid, .gallery-grid.three { grid-template-columns: 1fr; }
   .gallery-grid .figure-card img { height: auto; }
+  .coursework-grid {grid-template-columns: 1fr;}
 }
